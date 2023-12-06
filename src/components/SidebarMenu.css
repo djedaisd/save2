@@ -1,0 +1,6 @@
+.nav-pills li a:hover{
+    background-color: rgb(61, 61, 243);
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
