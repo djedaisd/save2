@@ -1,6 +1,63 @@
-.nav-pills li a:hover{
-    background-color: rgb(61, 61, 243);
-}
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.sidebar {
+    background-color: #3B3B3B;
+    color: white;
+    width: 210px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    border-top-right-radius: 15px; /* Скругление справа сверху */
+    border-bottom-right-radius: 15px; /* Скругление справа снизу */
 }
+
+.logo {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px; /* Увеличено с 20px до 50px */
+    
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sidebarMenu {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.menuItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px; /* Увеличено с 5px до 10px */
+    font-size: 18px;
+    transition: background 0.3s ease-in-out; /* Добавлено для плавного перехода фона */
+    font-weight: 700;
+}
+
+.menuItem:hover {
+    background: #150754; /* Фон при наведении */
+    border-radius: 10px; /* Скругление углов при наведении */
+    color: white;
+    
+}
+
+.menuItem svg {
+    margin-right: 9px; /* Расстояние между иконкой и текстом */
+}
+
+
+

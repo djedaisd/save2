@@ -9,10 +9,11 @@ function App() {
     <div className="App">
       <div className='container'>
          <SidebarMenu/>
-
+         <Todolist/>
+         </div>
       
-      <Todolist/>
-      </div>
+      
+      
     </div>
   ); 
 }
