@@ -6,13 +6,13 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="logo">
-                <h1>NOMADAI</h1>
+                <h1>NOMADAI</h1> 
             </div>
             <ul className="sidebarMenu">
-                <li className="menuItem"><FaRegChartBar /> MY PROGRESS</li>
-                <li className="menuItem"><FaUsers /> USERS</li>
-                <li className="menuItem"><FaRobot className='icon'/> EMTIHAN GPT</li>
-                <li className="menuItem"><FaUserTie /> AI MENTOR</li>
+                <li className="menuItem"><FaRegChartBar /> <a href='/'>COURSES </a></li>
+                <li className="menuItem"><FaUsers /><a> USERS </a></li>
+                <li className="menuItem"><FaRobot className='icon'/><a> EMTIHAN GPT </a></li>
+                <li className="menuItem"><FaUserTie /><a> AI MENTOR</a></li>
                 
             </ul>
             

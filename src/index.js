@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SidebarMenu from './components/SidebarMenu';
-import Todolist from './components/Todolist'
+import Courses from './components/Courses'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

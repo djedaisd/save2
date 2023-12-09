@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .sidebar {
-    background-color: #3B3B3B;
+    background-color: #112957;
     color: white;
     width: 210px;
     height: 100vh;
@@ -21,8 +21,9 @@
 .logo {
     width: 100%;
     text-align: left;
-    margin-bottom: 50px; /* Увеличено с 20px до 50px */
-    
+    margin-bottom: 80px; /* Увеличено с 20px до 50px */
+    margin-top: 30px;
+
 }
 
 .logo h1 {
@@ -48,12 +49,7 @@
     font-weight: 700;
 }
 
-.menuItem:hover {
-    background: #150754; /* Фон при наведении */
-    border-radius: 10px; /* Скругление углов при наведении */
-    color: white;
-    
-}
+
 
 .menuItem svg {
     margin-right: 9px; /* Расстояние между иконкой и текстом */

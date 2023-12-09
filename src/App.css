@@ -3,13 +3,10 @@
   height: 100px;
   width: 100%;
   margin-left: 130px;
-  margin-top: 40px;
+  
   
   
 }
-
-
-  
 
 .h3{
   margin-right: 250px;
@@ -21,14 +18,18 @@
 
 .header-icons {
   display: flex;
-  gap: 18px;
-  margin-left: 930px;
+  gap: 10px;
+  margin-left: 1080px;
   color:#3B3B3B;
-
-
+  width: 200px;
+  position: absolute;
+ overflow:wrap;
+ margin-top: 0;
+ margin-bottom: 0px;
+  
 }
 .button-1{
-  background-color: #3B3B3B;
+  background-color: #112957;
 }
 .search-container{
   width: 600px;
@@ -45,26 +46,41 @@
   height: 60px;
   margin: 20px 0;
   padding: 15px;
-  background-color: #3B3B3B;
+  background-color: #112957;
   color: white;
   border-radius: 20px;
+  margin-left: 35px;
 }
 
 .search-bar input {
   flex-grow: 1;
   margin-right: 10px;
   padding: 5px;
-  color: black;
+  color: #112957;
 }
 
 .create-button {
   color: white;
   font-weight: 700;
+  
 }
 .input-search{
   border-radius: 10px;
 }
 .icon1{
-  color: #3B3B3B;
+  color: #112957;
   margin-top: 7px;
+}
+.mentor-lesson{
+  margin-left: 40px;
+  color: #112957;
+}
+.poisk{
+  margin-right: 30px;
+}
+.drop1{
+  background-color: #112957;
+}
+.rowProfile{
+  margin-top: 47px;
 }
