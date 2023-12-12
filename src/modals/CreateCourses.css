@@ -1,7 +1,7 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
-.task-container {
+.course-contaainer{
   margin-left: 0px;
 }
 
@@ -18,7 +18,7 @@
 
 
 
-.task-grid {
+.course-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   margin-right: 70px !important;
@@ -26,7 +26,7 @@
 
 }
 
-.task-card {
+.course-card {
   width: 500px !important;
   margin: 2.5% !important;
   margin-top: 0 !important;
@@ -39,7 +39,7 @@
   margin-right: 25px !important;
 }
 
-.task-card img {
+.course-card img {
   width: 100%;
   height: 150px;
   object-fit: cover;
