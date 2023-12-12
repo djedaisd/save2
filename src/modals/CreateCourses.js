@@ -131,7 +131,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import  '../components/SidebarMenu.css'
 import "./CreateCourses.css"
 
-const CreateCourses = ({ modal, toggle }) => {
+const CreateCourses = ({ modal, toggle, save }) => {
   const [task, setTask] = useState({
     Name: '',
     Description: '',
@@ -154,30 +154,39 @@ const CreateCourses = ({ modal, toggle }) => {
   };
 
   const handleSave = () => {
-    // Save the course via POST request
+    const newCourse = {
+      course_title: task.Name,
+      course_description: task.Description,
+      course_image: task.Image,
+      user_id: task.MentorName,
+    };
+
     fetch('http://localhost:8000/api/courses/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(task),
+      body: JSON.stringify(newCourse),
     })
-        .then((response) => response.json())
-        .then((createdCourse) => {
-          setCourses((prevCourses) => [...prevCourses, createdCourse]);
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
         })
-        .catch((error) => console.error('Error creating course:', error));
+        .then(createdCourse => {
+          setCourses((prevCourses) => [...prevCourses, createdCourse]);
+          save(createdCourse);
+        })
+        .catch(error => console.error('Error creating course:', error));
 
-    // Clear input fields after saving
+    // Reset the form after saving
     setTask({
       Name: '',
       Description: '',
       MentorName: '',
       Image: '',
     });
-
-    // Close the modal
-    toggle();
   };
 
   return (

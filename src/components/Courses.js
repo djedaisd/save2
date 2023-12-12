@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CreateTask from '../modals/CreateCourses';
+import CreateCourses from '../modals/CreateCourses';
 import { Dropdown, Image } from 'react-bootstrap';
 import { FaBell, FaQuestionCircle, FaSearch } from 'react-icons/fa';
 import '../App.css';
@@ -57,8 +57,8 @@ const Courses = () => {
            </div>
            
         </div>
-        
-            <CreateTask toggle={toggle} modal={modal} save={CreateCourse} />
+            {/*<CreateCourses modal={true} toggle=/!* your toggle function *!/ save={handleSave} />*/}
+            <CreateCourses toggle={toggle} modal={modal} save={CreateCourse} />
         </>
     );
 };
