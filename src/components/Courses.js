@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CreateTask from '../modals/CreateTask';
+import CreateTask from '../modals/CreateCourses';
 import { Dropdown, Image } from 'react-bootstrap';
 import { FaBell, FaQuestionCircle, FaSearch } from 'react-icons/fa';
 import '../App.css';
@@ -57,14 +57,7 @@ const Courses = () => {
            </div>
            
         </div>
-        <div className='task-container'>
-                {courses.map(course => (
-                    <div key={course.id}>
-                        <h3>{course.course_title}</h3>
-                        <p>{course.course_description}</p>
-                    </div>
-                ))}
-            </div>
+        
             <CreateTask toggle={toggle} modal={modal} save={CreateCourse} />
         </>
     );

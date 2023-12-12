@@ -1,16 +1,39 @@
-import React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SidebarMenu from './components/SidebarMenu';
 import Courses from './components/Courses'
+import * as React from "react";
+import FindTask from './modals/FindTask';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Courses />,
+    
+    children: [
+      {
+        path: "team",
+        element: <FindTask />,
+        
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
    <React.StrictMode>
-   <App />
+   <App > <RouterProvider router={router} /> </App>
  </React.StrictMode>
 );
 

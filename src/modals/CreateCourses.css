@@ -1,0 +1,114 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.task-container {
+  margin-left: 0px;
+}
+
+.search-container {
+  width: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 0px;
+}
+
+
+
+
+.task-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  margin-right: 70px !important;
+  margin-top: 30px !important;
+
+}
+
+.task-card {
+  width: 500px !important;
+  margin: 2.5% !important;
+  margin-top: 0 !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+  transition: 0.3s !important;
+  background-color: #10295A !important ;
+  border-top: 5px solid #20212B !important;
+  height: 200px !important;
+  margin-right: 25px !important;
+}
+
+.task-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #E7E9EE;
+}
+
+.mentor-name {
+  margin-top: 110px !important;
+  color: white !important;
+  font-size: 18px !important;
+  margin-left: 20px !important;
+  position: absolute !important;
+ overflow:wrap !important;
+  
+  font-weight: 700 !important;
+}
+
+.join-button {
+  margin-top: 95px !important;
+}
+
+.join-button .join {
+  position: absolute !important;
+  bottom: 5  !important;
+  right: 1 !important;
+  border-radius: 30px 30px 30px 30px !important;
+  margin-left: 136px !important;
+  width: 150px !important;
+  height: 60px !important;
+  color: #1C2135 !important;
+  background-color: whitesmoke !important;
+  box-shadow: 2px 0px 2px 0 #5A6794 !important;
+  font-size: 20px !important;
+
+  
+}
+.join{
+  font-weight: 700 !important;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+  
+  color: #3B3B3B !important;
+}
+.descript{
+    font-size: 15px;
+  margin-left: 20px;
+  color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+ overflow:wrap;
+ margin-top: 30px;
+}
+.image{
+  width: 100px;
+  height: 50px;
+  justify-content: left;
+}
+.card-image{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 20px;
+  margin-top: 5px !important;
+  position: absolute;
+  overflow:wrap;
+  border-radius: 10px;
+}

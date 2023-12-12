@@ -3,16 +3,15 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import  '../components/SidebarMenu.css'
-import "./CreateTask.css"
+import "./CreateCourses.css"
 
-const CreateTask = ({ modal, toggle, save }) => {
+const CreateCourses = ({ modal, toggle, save }) => {
   const [tasks, setTasks] = useState([]);
   const [TaskName, setTaskName] = useState('');
   const [Description, setDescription] = useState('');
   const [MentorName, setMentorName] = useState('');
   const [ImageURL, setImageURL] = useState('');
-  const [Price, setPrice] = useState('');
-  const [Discount, setDiscount] = useState('');
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,10 +24,7 @@ const CreateTask = ({ modal, toggle, save }) => {
       setMentorName(value);
     } else if (name === 'ImageURL') {
       setImageURL(value);
-    } else if (name === 'Price') {
-      setPrice(value);
-    } else {
-      setDiscount(value);
+    
     }
   };
 
@@ -38,8 +34,7 @@ const CreateTask = ({ modal, toggle, save }) => {
       Description: Description,
       MentorName: MentorName,
       Image: ImageURL,
-      Price: Price,
-      Discount: Discount,
+      
     };
 
     setTasks([...tasks, TaskObj]);
@@ -48,7 +43,7 @@ const CreateTask = ({ modal, toggle, save }) => {
 
   return (
     <div className='task-container' style={{ marginLeft: '5px' }}>
-      <Modal isOpen={modal} toggle={toggle} {...CreateTask}>
+      <Modal isOpen={modal} toggle={toggle} {...CreateCourses}>
         <ModalHeader toggle={toggle}>New Course</ModalHeader>
         <ModalBody>
           <form>
@@ -109,12 +104,13 @@ const CreateTask = ({ modal, toggle, save }) => {
         <div className='task-grid'>
           {tasks.map((task, index) => (
             <div key={index} className='task-card'>
-              
+              <img  className='card-image ' src='https://w7.pngwing.com/pngs/734/59/png-transparent-laptop-showing-signage-computer-icons-programmer-computer-programming-source-code-coder-angle-text-rectangle.png' />
               <h3 className='title'>{task.Name}</h3>
+              
               <p className='descript'>{task.Description}</p>
               <p className='mentor-name'>Mentor:    {task.MentorName}</p>
               
-              <div className='join-button'><button className='join' style={{float: 'left', borderRadius: '20px 20px 20px 20px', marginLeft: '413px',width: '140px', height: '46px'}}> JOIN</button></div>
+              <div className='join-button'><button className='join' > JOIN</button></div>
             </div>
           ))}
         </div>
@@ -123,5 +119,5 @@ const CreateTask = ({ modal, toggle, save }) => {
   );
 };
 
-export default CreateTask;
+export default CreateCourses;
 

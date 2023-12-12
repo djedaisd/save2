@@ -23,6 +23,9 @@
     text-align: left;
     margin-bottom: 80px; /* Увеличено с 20px до 50px */
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 
 }
 
@@ -54,6 +57,20 @@
 .menuItem svg {
     margin-right: 9px; /* Расстояние между иконкой и текстом */
 }
+.link3{
+    text-decoration: none;
+    color: white;
+}
 
-
-
+.logo-image{
+    width: 50px;
+    
+}
+.link4{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 15px;
+}
