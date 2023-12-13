@@ -57,8 +57,7 @@ const Courses = () => {
            </div>
            
         </div>
-            {/*<CreateCourses modal={true} toggle=/!* your toggle function *!/ save={handleSave} />*/}
-            <CreateCourses toggle={toggle} modal={modal} save={CreateCourse} />
+            <CreateCourses toggle={toggle} modal={modal} save={CreateCourse} courses={courses} />
         </>
     );
 };
