@@ -11,10 +11,11 @@ function App() {
          <SidebarMenu/>
          <Courses/>
          </div>
-      
-      
-      
+
+
+
     </div>
+      
   ); 
 
 }
