@@ -10,7 +10,7 @@ const Courses = () => {
 
     useEffect(() => {
         // Fetch all courses when the component mounts
-        fetch('http://localhost:8000/api/courses/')
+        fetch('http://localhost:8000/api/courses/{user.id}')
             .then(response => response.json())
             .then(data => setCourses(data.allCourses))
             .catch(error => console.error('Error fetching courses:', error));

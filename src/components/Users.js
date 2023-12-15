@@ -115,7 +115,7 @@ const Users = () => {
                 </div>
             </div>
             <div>
-                <div>
+                <div className='usercard-container'>
                     {Array.isArray(users) ? (
                         users.map(user => (
                             <div key={user.id} className='card1'>

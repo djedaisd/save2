@@ -25,7 +25,7 @@ const RegistrationPage = () => {
     };
 
     return (
-
+<div>
             <link
                 href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
                 rel="stylesheet"
@@ -38,11 +38,7 @@ const RegistrationPage = () => {
                 name="viewport"
                 content="width=device-width,initial-scale=1,maximum-scale=1"
             />
-            <style>
-                body {
-                font - family: "Inter", sans-serif;
-            }
-            </style>
+            
             <script
                 src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
                 defer
@@ -199,7 +195,7 @@ const RegistrationPage = () => {
                 </div>
             </div>
         </div>
-
+        </div>
     );
 };
 
