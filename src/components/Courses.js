@@ -34,7 +34,7 @@ const Courses = () => {
                <a href="#" className='icon1'><FaBell size={25}  /></a>
                <a href="#" className='icon1'><FaQuestionCircle size={25} /></a>
                <Dropdown align="end">
-                   <Dropdown.Toggle className='drop1' id="dropdown-basic" style={{backgroundColor: "white", color:"black", border:"none"}}>
+                   <Dropdown.Toggle className='drop1' id="dropdown-basic" style={{backgroundColor: "white", color:"black", border:"none", marginTop:'20px'}}>
                        <Image src="https://get.pxhere.com/photo/man-person-people-woman-camera-photography-photographer-photo-male-dslr-portrait-canon-child-blue-holding-reflex-camera-photos-digital-camera-eye-picture-digital-photograph-job-cam-photo-shooting-cinematographer-portrait-photography-digital-slr-single-lens-reflex-camera-camera-operator-1102372.jpg" roundedCircle width={30} height={30} />
                        Yerdaulet Damir
                    </Dropdown.Toggle>

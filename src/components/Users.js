@@ -91,8 +91,8 @@ const Users = () => {
     return (
         <div>
             <div className='header-icons '>
-                <a href="#" className='icon1'><FaBell size={25} /></a>
-                <a href="#" className='icon1'><FaQuestionCircle size={25} /></a>
+                <a href="#" className='icon2'><FaBell size={25} /></a>
+                <a href="#" className='icon2'><FaQuestionCircle size={25} /></a>
                 <Dropdown align="end">
                     <Dropdown.Toggle className='drop1' id="dropdown-basic" style={{ backgroundColor: "white", color: "black", border: "none" }}>
                         <Image src="https://get.pxhere.com/photo/man-person-people-woman-camera-photography-photographer-photo-male-dslr-portrait-canon-child-blue-holding-reflex-camera-photos-digital-camera-eye-picture-digital-photograph-job-cam-photo-shooting-cinematographer-portrait-photography-digital-slr-single-lens-reflex-camera-camera-operator-1102372.jpg" roundedCircle width={30} height={30} />
@@ -114,8 +114,9 @@ const Users = () => {
                     <button className='btn btn-light fw-bold poisk'>Search for mentors</button>
                 </div>
             </div>
-            <div>
-                <div className='usercard-container'>
+            <div className='usercard-container'>
+            
+                
                     {Array.isArray(users) ? (
                         users.map(user => (
                             <div key={user.id} className='card1'>
@@ -135,13 +136,15 @@ const Users = () => {
                                     <a href={`https://linkedin.com/in/${user.linkedin}`} className='us-icon'><FaLinkedin className='us-icon' /> </a>
                                 </div>
                             </div>
+                            
                         ))
                     ) : (
                         <p>Loading...</p>
                     )}
-                </div>
-            </div>
+                    </div>
         </div>
+            
+        
     );
 };
 

@@ -6,6 +6,7 @@ import SidebarMenu from './components/SidebarMenu';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavigationLayout from './layout/navigation-layout';
 import Users from './components/Users';
+import CreateTask from './modals/FindTask';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/" element={< NavigationLayout/>}>
                         <Route index element={<Courses />} />
                         <Route  path='/users' element={<Users/>}/>
+                        <Route  path='/mycourses' element={<CreateTask/>}/>
 
                     </Route>
                 </Routes>

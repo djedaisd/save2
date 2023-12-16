@@ -66,7 +66,7 @@
 .input-search{
   border-radius: 10px;
 }
-.icon1{
+.icon2{
   color: #112957;
   margin-top: 7px;
 }
@@ -176,4 +176,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
+}
+.icon1{
+  color: #112957;
 }

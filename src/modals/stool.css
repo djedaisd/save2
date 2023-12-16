@@ -1,5 +1,5 @@
 .mainbody {
-  background-color: #10295a;
+  border: 5px solid #10295a;
   color: white;
   padding: 15px;
   border-radius: 20px;
@@ -25,8 +25,8 @@
 }
 .tassk {
   color: whitesmoke;
-  background-color: #5a6794;
-  height: 65px;
+  background-color: #10295a;
+  height: 80px;
   width: 100%;
   border: 1px solid black;
   border-radius: 10px;
@@ -35,4 +35,30 @@
   margin-top: 5px;
   font-weight: 700;
   overflow: hidden;
+  border-left: 8px solid #5a6baf;
+}
+.headd {
+  background-color: #10295a;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.par {
+  font-weight: 500;
+  color: whitesmoke;
+}
+.qweq {
+  padding-top: 11px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+.dateq {
+  font-weight: 400;
+}
+.qqeeww {
+  padding-left: 5px;
 }

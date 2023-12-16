@@ -31,9 +31,9 @@ const Todolist = () => {
             <FaQuestionCircle size={25} />
           </a>
           <Dropdown>
-            <Dropdown.Toggle className='drop1' id="dropdown-basic" style={{backgroundColor: "white", color:"black", border:"none"}} >
+            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               <Image
-                src="https://i.pinimg.com/originals/b9/05/3d/b9053d873e9f69058997913e0fffca2e.png"
+                src="https://get.pxhere.com/photo/man-person-people-woman-camera-photography-photographer-photo-male-dslr-portrait-canon-child-blue-holding-reflex-camera-photos-digital-camera-eye-picture-digital-photograph-job-cam-photo-shooting-cinematographer-portrait-photography-digital-slr-single-lens-reflex-camera-camera-operator-1102372.jpg"
                 roundedCircle
                 width={30}
                 height={30}
@@ -48,7 +48,7 @@ const Todolist = () => {
           </Dropdown>
         </div>
         <div className="mt-2">
-          <h3 className="fw-bold">Find New Courses</h3>{' '}
+          <h3 className="fw-bold">My Courses</h3>{' '}
         </div>
         <div className="search-bar">
           <input type="text" placeholder="Search" className="input-search" />
@@ -56,7 +56,7 @@ const Todolist = () => {
             className="btn btn-light fw-bold create-button"
             onClick={() => setModal(true)}
           >
-            Find New Course
+            search
           </button>
         </div>
       </div>
